@@ -1,0 +1,56 @@
+\documentclass[a4paper,11pt,titlepage]{article}
+
+\usepackage[italian]{babel}
+\usepackage{graphics}
+\usepackage[dvips]{graphicx}
+\usepackage[latin1]{inputenc}
+\usepackage{verbatim}
+\usepackage{makeidx}
+\usepackage{fancyhdr}
+\usepackage{color}
+\usepackage{syntonly}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+% stile di pagina
+\pagestyle{fancy}
+
+% autore
+\author{Dario Di Minno \and Claudio Tortorelli}
+
+\makeindex
+
+
+\begin{document}
+\hyphenation{Di-se-gna-to-re Li-sta-U-ten-ti-fo-rum e-re-di-ta-no}
+\title{Relazione per il corso di \\ Linguaggi di Programmazione: \\ Metodologie di Programmazione}
+\thispagestyle{empty}
+%\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+\fancyhf{} \fancyhead[LE,RO]{\bfseries\thepage}
+\fancyhead[LO]{\bfseries\rightmark}
+\fancyhead[RE]{\bfseries\leftmark}
+\renewcommand{\headrulewidth}{0.5pt}
+\addtolength{\headheight}{0.5pt}
+\fancypagestyle{plain}
+
+\newcommand{\vect}[1]{\boldsymbol{#1}}
+
+
+\maketitle 
+
+\newpage
+
+\tableofcontents %\listoffigures \listoftables
+
+%************************************************************************
+
+%************************************************************************
+\include{intro}
+\include{analisi}
+\include{progettazione}
+\include{implementazione}
+
+\end{document}
+
